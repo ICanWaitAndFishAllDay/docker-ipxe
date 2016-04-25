@@ -11,6 +11,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -qq update \
 	curl \
 	genisoimage \
 	liblzma-dev \
+	binutils-dev \
+	zlib1g-dev \
  && apt-get -yqq clean \
  && rm -rf /var/lib/apt/lists/*
 
